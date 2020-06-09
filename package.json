@@ -1,9 +1,12 @@
 {
   "scripts": {
     "docs:dev": "vuepress dev docs",
+    "fix": "markdownlint '**/*.md' --ignore node_modules -f",
+    "lint": "markdownlint '**/*.md' --ignore node_modules",
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "^1.5.0"
+    "vuepress": "^1.5.0",
+    "markdownlint-cli": "^0.23.1"
   }
 }
