@@ -1,6 +1,6 @@
-name: Node.js CI
+name:  markdownlint
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: markdownlint Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
