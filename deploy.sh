@@ -16,6 +16,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:jaylinh-com/spring-framework-chinese.git:gh-pages
+git push -f git@github.com:jaylinh-com/spring-framework-chinese.git master:gh-pages
 
 cd -
