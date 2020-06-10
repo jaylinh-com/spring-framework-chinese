@@ -66,8 +66,25 @@ module.exports = {
         {
           title: '1. Ioc 容器',
           collapsable: true,
-          sidebarDepth: 2,
-          children: []
+          sidebarDepth: 3,
+          children: [
+            ['/core/','1.1 spring ioc 容器和 beans 介绍'],
+            ['/core/beans-basics','1.2 容器概述'],
+            ['/core/beans-definition','1.3 Beans 概述'],
+            ['/core/beans-dependencies','1.4 依赖'],
+            ['/core/beans-factory-scopes','1.5 Beans 作用域'],
+            ['/core/core','1.6 自定义 bean 的性质'],
+            ['/core/core','1.7 Bean 定义的继承'],
+            ['/core/core','1.8 容器扩展点'],
+            ['/core/core','1.9 基于注解的容器配置'],
+            ['/core/core','1.10 classpath 扫描和组件管理'],
+            ['/core/core','1.11 使用 JSR330 标准注解'],
+            ['/core/core','1.12 基于Java的容器配置'],
+            ['/core/core','1.13 环境抽象'],
+            ['/core/core','1.14 注册 LoadTimeWeaver'],
+            ['/core/core','1.15 ApplicationContext 的其他功能'],
+            ['/core/beans-beanfactory','1.16 BeanFactory'],
+          ]
         },
         {
           title: '2. Resources',

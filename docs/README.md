@@ -1,10 +1,10 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: Spring 框架中文手册
+heroText: Spring 框架中文手册 5.3.0
 tagline: null
 actionText: 马上开始 →
-actionLink: /spring/
+actionLink: /overview/
 features:
 - title: Latest
   details: 采用当前最新版本翻译。
