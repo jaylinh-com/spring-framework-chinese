@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: Spring 框架中文手册 5.2.6(最新稳定版)
+heroText: Spring 框架中文手册 (最新稳定版)
 tagline: null
 actionText: 马上开始 →
 actionLink: /overview/
