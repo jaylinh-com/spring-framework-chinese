@@ -2,7 +2,7 @@ name: Build and Deploy
 on: [push]
 jobs:
   build-and-deploy:
-    runs-on: macos-10.15
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
