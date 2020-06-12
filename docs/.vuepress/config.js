@@ -106,9 +106,10 @@ function zhLocales() {
         {
           title: "1. Ioc 容器",
           collapsable: true,
+          path: "/core/",
           sidebarDepth: 3,
           children: [
-            ["/core/", "1.1. spring ioc 容器和 beans 介绍"],
+            ["/core/beans-introduction", "1.1. spring ioc 容器和 beans 介绍"],
             ["/core/beans-basics", "1.2. 容器概述"],
             ["/core/beans-definition", "1.3. Beans 概述"],
             ["/core/beans-dependencies", "1.4. 依赖"],
