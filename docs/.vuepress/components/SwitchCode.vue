@@ -14,9 +14,6 @@
 
 <script>
 export default {
-  mounted() {
-      console.log(this)
-  },
   methods: {
     handleClick(lang) {
       this.$store.commit("programming",lang)
