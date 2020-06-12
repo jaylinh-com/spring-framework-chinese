@@ -18,33 +18,33 @@ GithubPages： [https://jaylinh-com.github.io/spring-framework-chinese/](https:/
 ```html
 <SwitchCode>
 
-::: slot java
-```java
-// create and configure beans
-ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
+    ::: slot java
+    ```java
+    // create and configure beans
+    ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
 
-// retrieve configured instance
-PetStoreService service = context.getBean("petStore", PetStoreService.class);
+    // retrieve configured instance
+    PetStoreService service = context.getBean("petStore", PetStoreService.class);
 
-// use configured instance
-List<String> userList = service.getUsernameList();
-```
-:::
+    // use configured instance
+    List<String> userList = service.getUsernameList();
+    ```
+    :::
 
-::: slot kotlin
-```kotlin
-import org.springframework.beans.factory.getBean
+    ::: slot kotlin
+    ```kotlin
+    import org.springframework.beans.factory.getBean
 
-// create and configure beans
-val context = ClassPathXmlApplicationContext("services.xml", "daos.xml")
+    // create and configure beans
+    val context = ClassPathXmlApplicationContext("services.xml", "daos.xml")
 
-// retrieve configured instance
-val service = context.getBean<PetStoreService>("petStore")
+    // retrieve configured instance
+    val service = context.getBean<PetStoreService>("petStore")
 
-// use configured instance
-var userList = service.getUsernameList()
-```
-:::
+    // use configured instance
+    var userList = service.getUsernameList()
+    ```
+    :::
 
 </SwitchCode>
 ```
