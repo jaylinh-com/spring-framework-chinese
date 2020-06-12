@@ -6,8 +6,11 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "markdownlint-cli": "^0.23.1",
     "@vuepress/theme-vue": "1.5.1",
+    "markdownlint-cli": "^0.23.1",
     "vuepress": "1.5.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.8.28"
   }
 }

@@ -1,9 +1,12 @@
+const moment = require("dayjs");
+
 module.exports = {
   title: "Spring 框架中文手册",
   base: "/spring-framework-chinese/",
   logo: "/logo.png",
   description: "spring 中文手册",
   head: [["link", { rel: "ico", href: `/logo.png` }]],
+  plugins: plugins(),
   locales: {
     "/": {
       lang: "zh-CN",
@@ -16,10 +19,9 @@ module.exports = {
       description: "Spring Framework Documentation",
     },
   },
-  // theme: "@vuepress/vue",
   themeConfig: {
     displayAllHeaders: true,
-    lastUpdated: "最近更新时间",
+    lastUpdated: true,
     smoothScroll: true,
     locales: {
       "/": zhLocales(),
@@ -27,11 +29,23 @@ module.exports = {
     },
   },
 };
+function plugins() {
+  return {
+    "@vuepress/last-updated":
+    {
+      transformer: (timestamp, lang) => {
+        return moment(timestamp)
+          .format("YYYY-MM-DD HH:mm:ss");
+      },
+    },
+  };
+}
 function zhLocales() {
   return {
     selectText: "切换语言",
     label: "简体中文",
     ariaLabel: "切换语言",
+    lastUpdated: "最近更新时间",
     nav: [
       { text: "主页", link: "/" },
       { text: "概述", link: "/overview/" },
@@ -167,6 +181,7 @@ function enLocales() {
     selectText: "Switch Languages",
     label: "English",
     ariaLabel: "Switch Languages",
+    lastUpdated: "Last Updated",
     nav: [
       { text: "Home", link: "/en/" },
       { text: "Overview", link: "/en/overview/" },
@@ -224,7 +239,7 @@ function enLocales() {
         {
           title: "1. Ioc Container",
           collapsable: true,
-          path: '/en/core/',
+          path: "/en/core/",
           sidebarDepth: 3,
           children: [
             [
