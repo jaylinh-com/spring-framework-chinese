@@ -6,7 +6,10 @@ module.exports = {
   base: "/spring-framework-chinese/",
   logo: "/logo.png",
   description: "spring 中文手册",
-  head: [["link", { rel: "ico", href: `/logo.png` }]],
+  head: [
+    ["link", { rel: "ico", href: `/logo.png` }],
+    ['link', { rel: "shortcut icon", href: `/favicon.ico` }],
+  ],
   plugins: plugins(),
   locales: {
     "/": {
