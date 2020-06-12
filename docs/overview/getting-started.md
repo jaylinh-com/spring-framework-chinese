@@ -1,0 +1,3 @@
+如果你是刚开始学习 Spring, 你可以创建一个基于[Spring Boot](https://spring.io/projects/spring-boot)的应用来开始使用 Spring Framework. Spring Boot 提供快速创建基于 Spring 的生产级的应用的方式。它基于 Spring Framework 和 约定大于配置。被设计为尽可能快的搭建和运行Spring项目
+
+你可以使用 [start.spring.io](https://start.spring.io/) 生成一个基础项目。或者参考 ["Getting Started" guides](https://spring.io/guides) 中的内容 比如[Getting Started Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/). 这些指南都是任务式的并容易理解，大部分都是基于 Spring Boot。 也含有 来自 Spring protfolio 中的项目，当需要解决特定问题的时候可能需要参考它们
