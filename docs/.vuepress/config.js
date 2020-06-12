@@ -1,5 +1,6 @@
 const moment = require("dayjs");
-
+const utc = require("dayjs/plugin/utc");
+moment.extend(utc);
 module.exports = {
   title: "Spring 框架中文手册",
   base: "/spring-framework-chinese/",
@@ -34,7 +35,9 @@ function plugins() {
     "@vuepress/last-updated":
     {
       transformer: (timestamp, lang) => {
-        return moment(timestamp)
+        return moment
+          .utc(timestamp)
+          .utcOffset(8)
           .format("YYYY-MM-DD HH:mm:ss");
       },
     },
