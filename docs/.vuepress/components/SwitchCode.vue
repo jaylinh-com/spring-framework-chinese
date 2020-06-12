@@ -4,8 +4,8 @@
     <button @click="handleClick('java')">java</button>
     <button @click="handleClick('kotlin')">kotlin</button>
     </div>
-  <slot name="java" v-if="lang === 'java'"/>
-  <slot name="kotlin" v-if="lang === 'kotlin'"/>
+  <slot name="java" v-if="$store.state.programming === 'java'"/>
+  <slot name="kotlin" v-if="$store.state.programming === 'kotlin'"/>
   <Content slot-key="java"/>
   <Content slot-key="kotlin"/>
 
@@ -14,15 +14,12 @@
 
 <script>
 export default {
-  data() {
-    return {
-      lang: 'java'
-    }
+  mounted() {
+      console.log(this)
   },
   methods: {
     handleClick(lang) {
-      console.log(lang)
-      this.lang = lang
+      this.$store.commit("programming",lang)
     }
   }
 }
