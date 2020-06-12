@@ -80,3 +80,77 @@ The value of the `id` attribute refers to collaborating objects. The XML for ref
 
 </beans>
 ```
+
+### Composing XML-based Configuration Metadata
+
+### The Groovy Bean Definition DSL
+
+## 1.2.3. Using the Container
+
+The `ApplicationContext` is the interface for an advanced factory capable of maintaining a registry of different beans and their dependencies. By using the method `T getBean(String name, Class<T> requiredType)`, you can retrieve instances of your beans.
+
+The `ApplicationContext` lets you read bean definitions and access them, as the following example shows:
+
+<SwitchCode>
+
+::: slot java
+```java
+// create and configure beans
+ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
+
+// retrieve configured instance
+PetStoreService service = context.getBean("petStore", PetStoreService.class);
+
+// use configured instance
+List<String> userList = service.getUsernameList();
+```
+:::
+
+::: slot kotlin
+```kotlin
+import org.springframework.beans.factory.getBean
+
+// create and configure beans
+val context = ClassPathXmlApplicationContext("services.xml", "daos.xml")
+
+// retrieve configured instance
+val service = context.getBean<PetStoreService>("petStore")
+
+// use configured instance
+var userList = service.getUsernameList()
+```
+:::
+
+</SwitchCode>
+
+<SwitchCode>
+
+::: slot java
+```java
+// create and configure beans
+ApplicationContext context = new ClassPathXmlApplicationContext("services.xml", "daos.xml");
+
+// retrieve configured instance
+PetStoreService service = context.getBean("petStore", PetStoreService.class);
+
+// use configured instance
+List<String> userList = service.getUsernameList();
+```
+:::
+
+::: slot kotlin
+```kotlin
+import org.springframework.beans.factory.getBean
+
+// create and configure beans
+val context = ClassPathXmlApplicationContext("services.xml", "daos.xml")
+
+// retrieve configured instance
+val service = context.getBean<PetStoreService>("petStore")
+
+// use configured instance
+var userList = service.getUsernameList()
+```
+:::
+
+</SwitchCode>
