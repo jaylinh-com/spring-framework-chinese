@@ -8,7 +8,7 @@ In most application scenarios, explicit user code is not required to instantiate
 
 The following diagram shows a high-level view of how Spring works. Your application classes are combined with configuration metadata so that, after the `ApplicationContext` is created and initialized, you have a fully configured and executable system or application.
 
-![Figure 1. The Spring IoC container](/beans-fig-1.png)
+<img :src="$withBase('/beans-fig-1.png')" alt="Figure 1. The Spring IoC container"/>
 
 **Figure 1. The Spring IoC container**
 
