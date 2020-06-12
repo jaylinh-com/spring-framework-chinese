@@ -5,11 +5,8 @@ This chapter covers the Spring Framework implementation of the Inversion of Cont
 The org.springframework.beans and org.springframework.context packages are the basis for Spring Framework’s IoC container. The BeanFactory interface provides an advanced configuration mechanism capable of managing any type of object. ApplicationContext is a sub-interface of BeanFactory. It adds:
 
 - Easier integration with Spring’s AOP features
-
 - Message resource handling (for use in internationalization)
-
 - Event publication
-
 - Application-layer specific contexts such as the WebApplicationContext for use in web applications.
 
 In short, the BeanFactory provides the configuration framework and basic functionality, and the ApplicationContext adds more enterprise-specific functionality. The ApplicationContext is a complete superset of the BeanFactory and is used exclusively in this chapter in descriptions of Spring’s IoC container. For more information on using the BeanFactory instead of the ApplicationContext, see The BeanFactory.
