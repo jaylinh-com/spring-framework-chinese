@@ -4,7 +4,7 @@
 版本 5.2.6.RELEASE
 :::
 
-这部分文档绝对完整地涵盖了 Spring 框架的所有技术。
+参考文档的这一部分包含了 Spring Framework 所有必须的技术。
 
 其中最重要的是Spring框架的控制反转（IoC）容器。
 对Spring框架的IoC容器深入讨论之后，将全面介绍Spring的面向方面编程（AOP）技术。
