@@ -70,40 +70,11 @@ function zhLocales() {
     sidebar: {
       "/overview/": [
         {
-          title: "1. 我们所说的 Spring ",
+          title: "概述",
           collapsable: false,
           path: "/overview/",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "2. Spring 和 Spring 框架的历史",
-          collapsable: false,
-          path: "/overview/history",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "3. 设计哲学",
-          collapsable: false,
-          path: "/overview/philosophy",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "4. 反馈和贡献",
-          collapsable: false,
-          path: "/overview/feedback",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "5. 开始",
-          collapsable: false,
-          path: "/overview/getting-started",
-          sidebarDepth: 2,
-          children: [],
-        },
+          sidebarDepth: 1,
+        }
       ],
       "/core/": [
         {
@@ -207,39 +178,10 @@ function enLocales() {
     sidebar: {
       "/en/overview/": [
         {
-          title: "1. 我们所说的 Spring ",
+          title: "Overview",
           collapsable: false,
           path: "/en/overview/",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "2. Spring 和 Spring 框架的历史",
-          collapsable: false,
-          path: "/en/overview/history",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "3. 设计哲学",
-          collapsable: false,
-          path: "/en/overview/philosophy",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "4. 反馈和贡献",
-          collapsable: false,
-          path: "/en/overview/feedback",
-          sidebarDepth: 2,
-          children: [],
-        },
-        {
-          title: "5. 开始",
-          collapsable: false,
-          path: "/en/overview/getting-started",
-          sidebarDepth: 2,
-          children: [],
+          sidebarDepth: 1,
         },
       ],
       "/en/core/": [
