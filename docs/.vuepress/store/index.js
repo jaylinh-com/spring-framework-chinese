@@ -8,7 +8,7 @@ const store = new Vuex.Store({
     programming: 'java'
   },
   mutations: {
-    programming(state, programming) {
+    CHANGE_PROGRAMING(state, programming) {
       state.programming = programming
     }
   }
