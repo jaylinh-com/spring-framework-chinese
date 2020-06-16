@@ -4,7 +4,8 @@
 负责实例化、配置、组装 beans。
 容器通过读取配置元数据获取有关要实例化，配置和组装哪些对象的指令。
 配置元数据以XML，Java注解或Java代码表示。
-它使您能够表达组成应用程序的对象以及这些对象之间的丰富相互依赖关系。
+它使你能够表达组成应用程序的对象以及这些对象之间的丰富的相互依赖关系。
+
 
 Several implementations of the ApplicationContext interface are supplied with Spring. In stand-alone applications, it is common to create an instance of ClassPathXmlApplicationContext or FileSystemXmlApplicationContext. While XML has been the traditional format for defining configuration metadata, you can instruct the container to use Java annotations or code as the metadata format by providing a small amount of XML configuration to declaratively enable support for these additional metadata formats.
 
