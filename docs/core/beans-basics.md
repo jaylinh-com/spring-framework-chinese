@@ -4,8 +4,14 @@
 负责实例化、配置、组装 beans。
 容器通过读取配置元数据获取有关要实例化，配置和组装哪些对象的指令。
 配置元数据以XML，Java注解或Java代码表示。
-它使您能够表达组成应用程序的对象以及这些对象之间的丰富相互依赖关系。
+它使你能够表达组成应用程序的对象以及这些对象之间的丰富的相互依赖关系。
 
+Spring 提供了 `ApplicationContext` 接口的几种实现。
+在单独的应用中，常常创建[ClassPathXmlApplicationContext](https://docs.spring.io/spring-framework/docs/5.2.6.RELEASE/javadoc-api/org/springframework/context/support/ClassPathXmlApplicationContext.html) 或者 [FileSystemXmlApplicationContext](https://docs.spring.io/spring-framework/docs/5.2.6.RELEASE/javadoc-api/org/springframework/context/support/FileSystemXmlApplicationContext.html) 的一个实例。
+虽然XML是定义配置元数据的传统格式，但是你可以通过提供少量的XML配置以声明性地支持这些附加的元数据格式，指示容器使用Java注释或代码作为元数据格式。
+
+在大多数应用场景中，实例化Spring IoC容器的一个或多个实例不需要显式的用户代码。
+例如，在web应用
 ## 1.2.1 元数据配置
 
 ```xml
