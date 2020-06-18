@@ -104,8 +104,17 @@ function zhLocales() {
         {
           title: "2. Resources",
           collapsable: true,
-          sidebarDepth: 2,
-          children: [],
+          sidebarDepth: 3,
+          path: "/core/resources/",
+          children: [
+            ["/core/resources/introduction", "2.1.Introduction"],
+            ["/core/resources/the-resource-interface", "2.2.The Resource Interface"],
+            ["/core/resources/built-in-resource-implementations", "2.4.Built-in Resource Implementations"],
+            ["/core/resources/the-resourceloader", "2.4.The ResourceLoader"],
+            ["/core/resources/introduction", "2.5.The ResourceLoaderAware interface"],
+            ["/core/resources/introduction", "2.6.Resources as Dependencies"],
+            ["/core/resources/introduction", "2.7.Application Contexts and Resource Paths"],
+          ],
         },
         {
           title: "3. 验证，数据绑定和类型转换",
@@ -218,8 +227,17 @@ function enLocales() {
         {
           title: "2. Resources",
           collapsable: true,
-          sidebarDepth: 2,
-          children: [],
+          sidebarDepth: 3,
+          path: "/en/core/resources/",
+          children: [
+            ["/en/core/resources/introduction", "2.1.Introduction"],
+            ["/en/core/resources/the-resource-interface", "2.2.The Resource Interface"],
+            ["/en/core/resources/built-in-resource-implementations", "2.4.Built-in Resource Implementations"],
+            ["/en/core/resources/the-resourceloader", "2.4.The ResourceLoader"],
+            ["/en/core/resources/introduction", "2.5.The ResourceLoaderAware interface"],
+            ["/en/core/resources/introduction", "2.6.Resources as Dependencies"],
+            ["/en/core/resources/introduction", "2.7.Application Contexts and Resource Paths"],
+          ],
         },
         {
           title: "3. 验证，数据绑定和类型转换",
