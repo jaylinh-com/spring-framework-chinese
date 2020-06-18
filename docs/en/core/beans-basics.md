@@ -8,7 +8,7 @@ In most application scenarios, explicit user code is not required to instantiate
 
 The following diagram shows a high-level view of how Spring works. Your application classes are combined with configuration metadata so that, after the `ApplicationContext` is created and initialized, you have a fully configured and executable system or application.
 
-<img :src="$withBase('/beans-fig-1.png')" alt="Figure 1. The Spring IoC container"/>
+<img :src="$withBase('/images/container-magic.png')" alt="Figure 1. The Spring IoC container"/>
 
 **Figure 1. The Spring IoC container**
 
@@ -269,19 +269,23 @@ You can also use the `GroovyBeanDefinitionReader` for Groovy files, as the follo
 <SwitchCode>
 
 ::: slot java
+
 ```java
 GenericApplicationContext context = new GenericApplicationContext();
 new GroovyBeanDefinitionReader(context).loadBeanDefinitions("services.groovy", "daos.groovy");
 context.refresh();
 ```
+
 :::
 
 ::: slot kotlin
+
 ```kotlin
 val context = GenericApplicationContext()
 GroovyBeanDefinitionReader(context).loadBeanDefinitions("services.groovy", "daos.groovy")
 context.refresh()
 ```
+
 :::
 
 </SwitchCode>
