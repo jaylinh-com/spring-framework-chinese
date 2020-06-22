@@ -45,7 +45,7 @@ You are not required to supply a `name` or an `id` for a bean. If you do not sup
 
 The convention is to use the standard Java convention for instance field names when naming beans. That is, bean names start with a lowercase letter and are camel-cased from there. Examples of such names include `accountManager`, `accountService`, `userDao`, `loginController`, and so forth.
 
-Naming beans consistently makes your configuration easier to read and understand. Also, if you use Spring AOP, it helps a lot when applying advice to a set of beans related by name.
+Naming beans consistently makes your configuration easier to read and understand. Also, if you use Spring AOP, it helps a lot when applying `advice` to a set of beans related by name.
 :::
 
 ::: tip 
