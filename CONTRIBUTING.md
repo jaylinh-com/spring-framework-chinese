@@ -1,0 +1,4 @@
+- 认领章节
+- 查看 [https://github.com/sparanoid/chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)
+- fork 本项目 
+- 提交PR
