@@ -34,8 +34,9 @@ module.exports = {
   },
 };
 function plugins() {
-  return {
-    "@vuepress/last-updated":
+  return [
+    require('./plugins/baidu-analytics/index.js'),
+    ["@vuepress/last-updated",
     {
       transformer: (timestamp, lang) => {
         return moment
@@ -43,8 +44,8 @@ function plugins() {
           .utcOffset(8)
           .format("YYYY-MM-DD HH:mm:ss");
       },
-    },
-  };
+    },]
+  ];
 }
 function zhLocales() {
   return {
