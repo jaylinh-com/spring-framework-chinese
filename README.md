@@ -8,7 +8,7 @@
 
 原文链接：[https://docs.spring.io/spring/docs/5.2.6.RELEASE/spring-framework-reference/index.html](https://docs.spring.io/spring/docs/5.2.6.RELEASE/spring-framework-reference/index.html)
 
-GithubPages： [https://jaylinh-com.github.io/spring-framework-chinese/](https://jaylinh-com.github.io/spring-framework-chinese/)
+GithubPages： [https://jaylinh-com.github.io/spring-framework-chinese](https://jaylinh-com.github.io/spring-framework-chinese/)
 
 ## 组件说明
 
