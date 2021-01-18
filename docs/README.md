@@ -6,7 +6,7 @@ tagline: null
 actionText: 马上开始 →
 actionLink: /overview/
 features:
-- title: Latest (5.2.6)
+- title: Latest (5.2.12)
   details: 采用当前最新文档版本翻译。
 - title: 社区驱动
   details: 每一个后浪都可以自由的提供翻译。

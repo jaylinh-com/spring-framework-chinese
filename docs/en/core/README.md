@@ -1,7 +1,7 @@
 # Core Technologies
 
 ::: tip
-Version 5.2.6.RELEASE
+Version 5.2.12.RELEASE
 :::
 
 This part of the reference documentation covers all the technologies that are absolutely integral to the Spring Framework.

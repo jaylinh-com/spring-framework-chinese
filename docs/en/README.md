@@ -6,7 +6,7 @@ tagline: null
 actionText: Get Started →
 actionLink: /overview/
 features:
-- title: Latest (5.2.6)
+- title: Latest (5.2.12)
   details: translated by latest GA version。
 - title: Driven by community
   details: everyone can translate。
