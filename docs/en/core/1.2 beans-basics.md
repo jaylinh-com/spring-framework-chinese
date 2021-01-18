@@ -8,7 +8,7 @@ In most application scenarios, explicit user code is not required to instantiate
 
 The following diagram shows a high-level view of how Spring works. Your application classes are combined with configuration metadata so that, after the `ApplicationContext` is created and initialized, you have a fully configured and executable system or application.
 
-<img :src="$withBase('/beans-fig-1.png')" alt="Figure 1. The Spring IoC container"/>
+<img :src="$withBase('/images/container-magic.png')" alt="Figure 1. The Spring IoC container"/>
 
 **Figure 1. The Spring IoC container**
 
@@ -151,15 +151,14 @@ In the preceding example, external bean definitions are loaded from three files:
 
 ::: tip
 
-	
 It is possible, but not recommended, to reference files in parent directories using a relative "../" path. Doing so creates a dependency on a file that is outside the current application. In particular, this reference is not recommended for `classpath:` URLs (for example, `classpath:../services.xml`), where the runtime resolution process chooses the “nearest” classpath root and then looks into its parent directory. Classpath configuration changes may lead to the choice of a different, incorrect directory.
 
 You can always use fully qualified resource locations instead of relative paths: for example, `file:C:/config/services.xml` or `classpath:/config/services`.xml. However, be aware that you are coupling your application’s configuration to specific absolute locations. It is generally preferable to keep an indirection for such absolute locations — for example, through "${…​}" placeholders that are resolved against JVM system properties at runtime.
 
+:::
+
 The namespace itself provides the import directive feature. Further configuration features beyond plain bean definitions are available in a selection of XML namespaces provided by Spring — for example, the `context` and `util` namespaces.
 
-
-:::
 ### The Groovy Bean Definition DSL
 
 As a further example for externalized configuration metadata, bean definitions can also be expressed in Spring’s Groovy Bean Definition DSL, as known from the Grails framework. Typically, such configuration live in a ".groovy" file with the structure shown in the following example:
@@ -269,19 +268,23 @@ You can also use the `GroovyBeanDefinitionReader` for Groovy files, as the follo
 <SwitchCode>
 
 ::: slot java
+
 ```java
 GenericApplicationContext context = new GenericApplicationContext();
 new GroovyBeanDefinitionReader(context).loadBeanDefinitions("services.groovy", "daos.groovy");
 context.refresh();
 ```
+
 :::
 
 ::: slot kotlin
+
 ```kotlin
 val context = GenericApplicationContext()
 GroovyBeanDefinitionReader(context).loadBeanDefinitions("services.groovy", "daos.groovy")
 context.refresh()
 ```
+
 :::
 
 </SwitchCode>
